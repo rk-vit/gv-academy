@@ -1,0 +1,47 @@
+.footer {
+  background-color: #065f46;
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.copyright {
+  font-size: 0.875rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  background-color: white;
+  color: #065f46;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  height: 2rem;
+  width: 2rem;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon svg {
+  height: 1rem;
+  width: 1rem;
+}
+

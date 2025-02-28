@@ -1,0 +1,98 @@
+.vision-mission {
+  background-color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border-top: 4px solid #059669;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  background-color: rgba(5, 150, 105, 0.1);
+  padding: 1rem;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon svg {
+  color: #059669;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card-list li {
+  display: flex;
+  align-items: flex-start;
+  color: #6b7280;
+}
+
+.check-icon {
+  background-color: rgba(5, 150, 105, 0.1);
+  padding: 0.25rem;
+  border-radius: 9999px;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+}
+
+.check-icon::before {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.25rem;
+  border-left: 2px solid #059669;
+  border-bottom: 2px solid #059669;
+  transform: rotate(-45deg);
+  top: 0.25rem;
+  left: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
