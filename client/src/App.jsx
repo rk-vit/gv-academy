@@ -25,9 +25,9 @@ function App() {
     <div className="app">
       <Header scrolled={scrolled} />
       <main>
-        
+        <Hero />
         {/* 
-          <Hero />
+          
          <About />
         <VisionMission />
         <Courses />
