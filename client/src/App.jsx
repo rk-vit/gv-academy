@@ -26,9 +26,10 @@ function App() {
       <Header scrolled={scrolled} />
       <main>
         <Hero />
+        <About />
+
         {/* 
           
-         <About />
         <VisionMission />
         <Courses />
         <Team />

@@ -17,6 +17,7 @@ const Header = ({ scrolled }) => {
       setIsMenuOpen(false)
     }
   }
+  
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
@@ -47,6 +48,7 @@ const Header = ({ scrolled }) => {
               {["Home", "About", "Vision & Mission", "Courses", "Team", "Contact"].map((item) => (
                 <li key={item}>
                   <a
+                    className="nav-items"
                     href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
                     onClick={(e) => {
                       e.preventDefault()

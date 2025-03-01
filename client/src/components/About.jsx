@@ -22,7 +22,7 @@ const About = () => {
           <div className="about-text">
             <h3>Our Story</h3>
             <p>
-              Founded in 2010, GurukulaViriksham Academy was established with a vision to create an educational
+              Founded in 2024, GurukulaViriksham Academy was established with a vision to create an educational
               institution that honors the ancient Gurukula system while embracing modern educational practices. Our name
               reflects our philosophy - "Gurukula" representing the traditional teacher-student relationship, and
               "Viriksham" meaning tree, symbolizing growth and knowledge.
