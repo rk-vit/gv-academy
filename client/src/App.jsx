@@ -27,7 +27,7 @@ function App() {
       <main>
         
         {/* 
-        <Hero />
+          <Hero />
          <About />
         <VisionMission />
         <Courses />
