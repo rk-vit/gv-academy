@@ -52,7 +52,7 @@ const About = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>50+</h4>
+                  <h4>10+</h4>
                   <p>Courses Offered</p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const About = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>2,500+</h4>
+                  <h4>50+</h4>
                   <p>Students Enrolled</p>
                 </div>
               </div>
@@ -123,8 +123,8 @@ const About = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>12+</h4>
-                  <p>Years of Excellence</p>
+                  <h4>10+</h4>
+                  <p>Years of Teaching Excellence</p>
                 </div>
               </div>
             </div>

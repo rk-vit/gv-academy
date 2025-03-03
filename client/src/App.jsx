@@ -16,7 +16,6 @@ function App() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
     }
-
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -27,10 +26,9 @@ function App() {
       <main>
         <Hero />
         <About />
-
+        <VisionMission />
         {/* 
           
-        <VisionMission />
         <Courses />
         <Team />
         <Contact /> */}
