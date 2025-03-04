@@ -4,68 +4,95 @@ import { useState } from "react"
 import "../styles/Courses.css"
 
 const courseCategories = [
-  { id: "all", name: "All Courses" },
-  { id: "traditional", name: "Traditional Studies" },
-  { id: "modern", name: "Modern Subjects" },
-  { id: "professional", name: "Professional Courses" },
-]
+  { id: "cbse", name: "CBSE" },
+  { id: "icse", name: "ICSE" },
+  { id: "matric", name: "Matriculation" },
+];
 
 const coursesData = [
   {
     id: 1,
-    title: "Vedic Mathematics",
-    description: "Learn ancient mathematical techniques that simplify complex calculations.",
-    category: "traditional",
-    duration: "6 months",
-    level: "Beginner to Advanced",
+    title: "Primary-CBSE",
+    description: "Class I-V",
+    category: "cbse",
+    level: "Monthly Plan Available",
+    duration: "12 Months",
     icon: "calculator",
   },
   {
     id: 2,
-    title: "Sanskrit Language",
-    description: "Master the ancient language with our comprehensive course structure.",
-    category: "traditional",
-    duration: "12 months",
-    level: "Beginner to Intermediate",
+    title: "Primary-ICSE",
+    description: "Class I-V",
+    category: "icse",
+    level: "Monthly Plan Available",
+    duration: "12 Months",
     icon: "book-open",
   },
   {
     id: 3,
-    title: "Web Development",
-    description: "Build modern websites and applications with the latest technologies.",
-    category: "modern",
-    duration: "8 months",
-    level: "Intermediate",
-    icon: "code",
+    title: "Primary-Matric",
+    description: "Class I-V",
+    category: "matric",
+    level: "Monthly Plan Available",
+    duration: "12 Months",
+    icon: "calculator",
   },
   {
     id: 4,
-    title: "Global Leadership",
-    description: "Develop leadership skills with a global perspective and ethical foundation.",
-    category: "professional",
-    duration: "4 months",
-    level: "Advanced",
-    icon: "globe",
+    title: "Secondary-CBSE",
+    description: "Class VI-X",
+    category: "cbse",
+    duration: "12 Months",
+    level: "Monthly Plan Available",
+    icon: "calculator",
   },
   {
     id: 5,
-    title: "Classical Music",
-    description: "Learn traditional musical instruments and vocal techniques from master practitioners.",
-    category: "traditional",
-    duration: "12 months",
-    level: "All Levels",
-    icon: "music",
+    title: "Secondary-ICSE",
+    description: "Class VI-X",
+    category: "icse",
+    duration: "12 Months",
+    level: "Monthly Plan Available",
+    icon: "book-open",
   },
   {
     id: 6,
-    title: "Modern Science",
-    description: "Explore scientific principles with a blend of traditional wisdom and modern research.",
-    category: "modern",
-    duration: "10 months",
-    level: "Intermediate",
-    icon: "microscope",
+    title: "Secondary-Matric",
+    description: "Class VI-X",
+    category: "matric",
+    duration: "12 Months",
+    level: "Monthly Plan Available",
+    icon: "book-open",
   },
-]
+  {
+    id: 7,
+    title: "Senior Secondary-CBSE",
+    description: "Class XI-XII",
+    category: "cbse",
+    duration: "12 Months",
+    level: "Monthly Plan Available",
+    icon: "code",
+  },
+  {
+    id: 8,
+    title: "Senior Secondary-ICSE",
+    description: "Class XI-XII",
+    category: "icse",
+    duration: "12 Months",
+    level: "Monthly Plan Available",
+    icon: "code",
+  },
+  {
+    id: 9,
+    title: "Senior Secondary-Matric",
+    description: "Class XI-XII",
+    category: "matric",
+    duration: "12 Months",
+    level: "Monthly Plan Available",
+    icon: "code",
+  },
+];
+
 
 const getIcon = (iconName) => {
   switch (iconName) {
@@ -186,7 +213,7 @@ const getIcon = (iconName) => {
 }
 
 const Courses = () => {
-  const [activeCategory, setActiveCategory] = useState("all")
+  const [activeCategory, setActiveCategory] = useState("cbse")
 
   const filteredCourses =
     activeCategory === "all" ? coursesData : coursesData.filter((course) => course.category === activeCategory)

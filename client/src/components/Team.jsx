@@ -3,9 +3,9 @@ import "../styles/Team.css"
 const teamMembers = [
   {
     id: 1,
-    name: "Dr. Rajesh Kumar",
+    name: "Dr. Priya Ravishankar",
     role: "Founder & Director",
-    bio: "With over 25 years of experience in education, Dr. Kumar combines traditional knowledge with modern teaching methodologies.",
+    bio: "With over 10+ years of experience in education, Dr. Priya combines traditional knowledge with modern teaching methodologies.",
     image: "/placeholder.svg?height=400&width=400",
     social: {
       linkedin: "#",
@@ -15,8 +15,8 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Dr. Priya Sharma",
-    role: "Academic Dean",
+    name: "Mrs. Admin Staff",
+    role: "Admin Staff",
     bio: "An expert in curriculum development with a passion for integrating traditional wisdom into contemporary education.",
     image: "/placeholder.svg?height=400&width=400",
     social: {
@@ -24,31 +24,7 @@ const teamMembers = [
       twitter: "#",
       email: "priya@example.com",
     },
-  },
-  {
-    id: 3,
-    name: "Prof. Anand Verma",
-    role: "Head of Sanskrit Studies",
-    bio: "A renowned Sanskrit scholar dedicated to preserving and promoting the ancient language and its literature.",
-    image: "/placeholder.svg?height=400&width=400",
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "anand@example.com",
-    },
-  },
-  {
-    id: 4,
-    name: "Dr. Meera Patel",
-    role: "Head of Modern Sciences",
-    bio: "Specializes in bridging traditional knowledge systems with contemporary scientific research and applications.",
-    image: "/placeholder.svg?height=400&width=400",
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "meera@example.com",
-    },
-  },
+  }
 ]
 
 const Team = () => {

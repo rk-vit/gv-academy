@@ -80,7 +80,7 @@ const Hero = () => {
       <div className="container hero-content">
         <h1 ref={titleRef}>Nurturing Knowledge, Cultivating Character</h1>
         <p ref={subtitleRef}>
-          At GurukulaViriksham Academy, we blend traditional wisdom with modern education to shape the leaders of
+          At GurukulaVriksham Academy, we blend traditional wisdom with modern education to shape the leaders of
           tomorrow
         </p>
         <div ref={ctaRef} className="cta-buttons">

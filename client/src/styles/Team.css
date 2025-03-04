@@ -3,14 +3,15 @@
 }
 
 .team-members {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: center;
   gap: 2rem;
 }
 
 .team-member {
   background-color: #f9fafb;
   border-radius: 0.75rem;
+  max-width: 400px;
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -115,15 +116,10 @@
   margin-left: 0.25rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .team-members {
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
   }
 }
 
-@media (min-width: 1024px) {
-  .team-members {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 

@@ -27,10 +27,10 @@ function App() {
         <Hero />
         <About />
         <VisionMission />
+        <Courses/>
+        <Team />
         {/* 
           
-        <Courses />
-        <Team />
         <Contact /> */}
       </main>
       <Footer />
