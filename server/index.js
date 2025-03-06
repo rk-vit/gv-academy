@@ -40,8 +40,8 @@ app.post("/contactUs", async (req, res) => {
 
     try {
         const info = await transporter.sendMail({
-            from: "revanthkannam05@gmail.com", // Sender address
-            to: "revanthkanna.m2023@vitstudent.ac.in,naveenkumar242508@gmail.com", // Receivers
+            from: "gurukulavrikshamacademy@gmail.com", // Sender address
+            to: "supriyaravi2007@gmail.com,gurukulavrikshamacademy@gmail.com", // Receivers
             subject: "Gurukula Vriksham:- New Enquiry", // Subject line
             text: content, // Plain text body
         });
