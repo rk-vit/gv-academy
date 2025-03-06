@@ -25,7 +25,7 @@ const Contact = () => {
       console.log("handle submitt triggered")
 
       try {
-        const response = await axios.post("http://localhost:3000/contactUs", formData)
+        const response = await axios.post("https://gv-academy-yfjm.vercel.app/contactUs", formData)
 
         if (response.status === 200) {
           setSubmitMessage("Thank you for your message! We will get back to you soon.")
