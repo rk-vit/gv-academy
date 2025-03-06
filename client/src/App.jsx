@@ -29,9 +29,9 @@ function App() {
         <VisionMission />
         <Courses/>
         <Team />
-        {/* 
+        <Contact /> 
+
           
-        <Contact /> */}
       </main>
       <Footer />
     </div>

@@ -3,26 +3,14 @@ import "../styles/Team.css"
 const teamMembers = [
   {
     id: 1,
-    name: "Dr. Priya Ravishankar",
+    name: "Dr. Supriya Ravishankar",
     role: "Founder & Director",
-    bio: "With over 10+ years of experience in education, Dr. Priya combines traditional knowledge with modern teaching methodologies.",
-    image: "/placeholder.svg?height=400&width=400",
+    bio: "With over 10+ years of experience in education, Dr. Supriya combines traditional knowledge with modern teaching methodologies.",
+    image: "/founder.jpg?height=500&width=400",
     social: {
       linkedin: "#",
       twitter: "#",
       email: "rajesh@example.com",
-    },
-  },
-  {
-    id: 2,
-    name: "Mrs. Admin Staff",
-    role: "Admin Staff",
-    bio: "An expert in curriculum development with a passion for integrating traditional wisdom into contemporary education.",
-    image: "/placeholder.svg?height=400&width=400",
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "priya@example.com",
     },
   }
 ]
@@ -32,9 +20,9 @@ const Team = () => {
     <section id="team" className="team">
       <div className="container">
         <div className="section-title">
-          <h2>Our Team</h2>
+          <h2>Our Board</h2>
           <div className="divider"></div>
-          <p>Meet our dedicated faculty and staff who are committed to providing exceptional education</p>
+          <p>Meet the visionary leaders and experts on our board who guide us towards excellence and innovation.</p>
         </div>
 
         <div className="team-members">

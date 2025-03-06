@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import "../styles/Contact.css"
-
+import axios from "axios";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -11,25 +11,46 @@ const Contact = () => {
     subject: "",
     message: "",
   })
-
+  const [isSubmitting,setIsSubmitting] = useState(false)
+  const [submitMessage,setSubmitMessage] = useState("")
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Form submission logic would go here
-    console.log("Form submitted:", formData)
-    alert("Thank you for your message. We will get back to you soon!")
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    })
-  }
+
+  const handleSubmit = async (e) => {
+      e.preventDefault()
+      setIsSubmitting(true)
+      console.log("handle submitt triggered")
+
+      try {
+        const response = await axios.post("http://localhost:3000/contactUs", formData)
+
+        if (response.status === 200) {
+          setSubmitMessage("Thank you for your message! We will get back to you soon.")
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+          })
+        } else {
+          setSubmitMessage("Something went wrong. Please try again.")
+        }
+      } catch (error) {
+        setSubmitMessage("Failed to submit. Please check your internet connection.")
+      } finally {
+        setIsSubmitting(false)
+
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          setSubmitMessage("")
+        }, 5000)
+      }
+    }
+
 
   return (
     <section id="contact" className="contact">
@@ -219,6 +240,7 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
+            <p>{submitMessage}</p>
           </div>
         </div>
 
