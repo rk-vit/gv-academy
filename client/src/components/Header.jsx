@@ -60,7 +60,7 @@ const Header = ({ scrolled }) => {
                 </li>
               ))}
             </ul>
-            <button className="enroll-btn" onClick={() => alert("Enrollment process initiated!")}>
+            <button className="enroll-btn" onClick={() => scrollToSection("contact")}>
               Enroll Now
             </button>
           </nav>

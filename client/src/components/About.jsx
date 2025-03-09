@@ -16,7 +16,7 @@ const About = () => {
           <div className="about-image">
             <div className="image-decoration top-left"></div>
             <div className="image-decoration bottom-right"></div>
-            <img src="/placeholder.svg?height=600&width=800" alt="Students at GurukulaViriksham" />
+            <img src="/founder1.jpg?height=600&width=800" alt="Students at GurukulaViriksham" />
           </div>
 
           <div className="about-text">
@@ -77,7 +77,7 @@ const About = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>50+</h4>
+                  <h4>20+</h4>
                   <p>Students Enrolled</p>
                 </div>
               </div>
@@ -124,7 +124,7 @@ const About = () => {
                 </div>
                 <div>
                   <h4>10+</h4>
-                  <p>Years of Teaching Excellence</p>
+                  <p>Years of Coaching Excellence</p>
                 </div>
               </div>
             </div>

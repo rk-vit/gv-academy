@@ -8,9 +8,7 @@ const teamMembers = [
     bio: "With over 10+ years of experience in education, Dr. Supriya combines traditional knowledge with modern teaching methodologies.",
     image: "/founder.jpg?height=500&width=400",
     social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "rajesh@example.com",
+      email: "#supriyaravi2007@gmail.com",
     },
   }
 ]
@@ -32,7 +30,7 @@ const Team = () => {
                 <img src={member.image || "/placeholder.svg"} alt={member.name} />
                 <div className="member-social">
                   <div className="social-icons">
-                    <a href={member.social.linkedin} className="social-icon">
+                    {/*<a href={member.social.linkedin} className="social-icon">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -63,7 +61,7 @@ const Team = () => {
                       >
                         <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                       </svg>
-                    </a>
+                    </a> */}
                     <a href={`mailto:${member.social.email}`} className="social-icon">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +89,7 @@ const Team = () => {
             </div>
           ))}
         </div>
-
+          {/*
         <div className="view-all">
           <a
             href="#"
@@ -101,7 +99,7 @@ const Team = () => {
               alert("View all team members")
             }}
           >
-            View All Team Members
+             View All Team Members 
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -116,7 +114,9 @@ const Team = () => {
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
           </a>
+          
         </div>
+        */}
       </div>
     </section>
   )

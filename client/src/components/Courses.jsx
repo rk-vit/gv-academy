@@ -271,7 +271,7 @@ const Courses = () => {
           ))}
         </div>
 
-        {/* View All Button */}
+        {/* 
         <div className="view-all">
           <button className="view-all-btn" onClick={() => alert("View all courses")}>
             View All Courses
@@ -290,6 +290,7 @@ const Courses = () => {
             </svg>
           </button>
         </div>
+        View All Button */}
       </div>
     </section>
   )
