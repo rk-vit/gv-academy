@@ -121,7 +121,7 @@ const Header = ({ scrolled }) => {
                   </li>
                 ))}
               </ul>
-              <button className="enroll-btn mobile" onClick={() => alert("Enrollment process initiated!")}>
+              <button className="enroll-btn mobile" onClick={() => scrollToSection("contact")}>
                 Enroll Now
               </button>
             </nav>
