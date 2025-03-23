@@ -14,6 +14,13 @@ const teamMembers = [
 ]
 
 const Team = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+      setIsMenuOpen(false)
+    }
+  }
   return (
     <section id="team" className="team">
       <div className="container">
@@ -89,17 +96,14 @@ const Team = () => {
             </div>
           ))}
         </div>
-          {/*
+          
         <div className="view-all">
           <a
-            href="#"
+            href="#Contact"
             className="view-all-link"
-            onClick={(e) => {
-              e.preventDefault()
-              alert("View all team members")
-            }}
+            onClick={() => scrollToSection("contact")}
           >
-             View All Team Members 
+            Join our Team
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -116,7 +120,7 @@ const Team = () => {
           </a>
           
         </div>
-        */}
+  
       </div>
     </section>
   )
