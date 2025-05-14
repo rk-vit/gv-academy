@@ -17,7 +17,6 @@ const Header = ({ scrolled }) => {
       setIsMenuOpen(false)
     }
   }
-  
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
@@ -39,16 +38,15 @@ const Header = ({ scrolled }) => {
               <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
-            <span className="logo-text">GurukulaVriksham</span>
+            <span className="logo-text">GurukulaViriksham</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="desktop-nav">
             <ul>
-              {["Home", "About", "Vision & Mission", "Courses", "Team", "Contact"].map((item) => (
+              {["Home", "About", "Vision & Mission", "Courses", "Team", "Careers", "Contact"].map((item) => (
                 <li key={item}>
                   <a
-                    className="nav-items"
                     href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
                     onClick={(e) => {
                       e.preventDefault()
@@ -60,7 +58,7 @@ const Header = ({ scrolled }) => {
                 </li>
               ))}
             </ul>
-            <button className="enroll-btn" onClick={() => scrollToSection("contact")}>
+            <button className="enroll-btn" onClick={() => alert("Enrollment process initiated!")}>
               Enroll Now
             </button>
           </nav>
@@ -107,7 +105,7 @@ const Header = ({ scrolled }) => {
           <div className="mobile-nav">
             <nav>
               <ul>
-                {["Home", "About", "Vision & Mission", "Courses", "Team", "Contact"].map((item) => (
+                {["Home", "About", "Vision & Mission", "Courses", "Team", "Careers", "Contact"].map((item) => (
                   <li key={item}>
                     <a
                       href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
@@ -121,7 +119,7 @@ const Header = ({ scrolled }) => {
                   </li>
                 ))}
               </ul>
-              <button className="enroll-btn mobile" onClick={() => scrollToSection("contact")}>
+              <button className="enroll-btn mobile" onClick={() => alert("Enrollment process initiated!")}>
                 Enroll Now
               </button>
             </nav>
@@ -133,4 +131,3 @@ const Header = ({ scrolled }) => {
 }
 
 export default Header
-

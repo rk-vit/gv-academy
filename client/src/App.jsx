@@ -7,6 +7,7 @@ import Team from "./components/Team"
 import Courses from "./components/Courses"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import Careers from "./components/carrers"
 import "./styles/App.css"
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <VisionMission />
         <Courses/>
         <Team />
+        <Careers/>
         <Contact /> 
 
           
