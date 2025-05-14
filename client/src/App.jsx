@@ -7,11 +7,11 @@ import Team from "./components/Team"
 import Courses from "./components/Courses"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
-import Careers from "./components/carrers"
+import Careers from "./components/Carrers"
 import "./styles/App.css"
 
 function App() {
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
