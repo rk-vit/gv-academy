@@ -15,42 +15,24 @@ const departments = [
 const openPositions = [
   {
     id: 1,
-    title: "Sanskrit Professor",
-    department: "teaching",
+    title: "Social Media Coordinator",
+    department: "other",
     type: "Full-time",
     location: "On-campus",
     description:
-      "We are looking for an experienced Sanskrit Professor to join our traditional studies department. The ideal candidate should have deep knowledge of Sanskrit literature and teaching experience.",
+      "We are looking for a creative and organized Social Media Coordinator to join our communications team.The ideal candidate should have a strong understanding of digital platforms, content creation, and community engagement, with prior experience in managing social media channels professionally.",
   },
   {
     id: 2,
-    title: "Mathematics Teacher",
+    title: "Higher Secondary Educator - All subjects",
     department: "teaching",
-    type: "Full-time",
+    type: "Part-time",
     location: "On-campus",
     description:
-      "Join our team as a Mathematics Teacher specializing in both modern and Vedic mathematics. You'll be responsible for curriculum development and teaching students of various age groups.",
+      "We are seeking a dedicated Higher Secondary Educator to teach multiple subjects across the curriculum. The ideal candidate should possess strong subject knowledge, excellent teaching skills, and experience in guiding students through higher secondary education effectively.",
   },
   {
     id: 3,
-    title: "Administrative Assistant",
-    department: "administration",
-    type: "Full-time",
-    location: "On-campus",
-    description:
-      "We're seeking an organized and efficient Administrative Assistant to support our academic operations. The role involves managing schedules, correspondence, and student records.",
-  },
-  {
-    id: 4,
-    title: "IT Support Specialist",
-    department: "it",
-    type: "Full-time",
-    location: "On-campus",
-    description:
-      "Technical support specialist needed to maintain our campus IT infrastructure, assist faculty with technology integration, and provide support for our online learning platforms.",
-  },
-  {
-    id: 5,
     title: "Student Counselor",
     department: "counseling",
     type: "Part-time",
