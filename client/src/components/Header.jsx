@@ -58,7 +58,10 @@ const Header = ({ scrolled }) => {
                 </li>
               ))}
             </ul>
-            <button className="enroll-btn" onClick={() => alert("Enrollment process initiated!")}>
+            <button className="enroll-btn" onClick={(e) => {
+                        e.preventDefault()
+                        scrollToSection("contact")
+                      }}>
               Enroll Now
             </button>
           </nav>
@@ -119,7 +122,11 @@ const Header = ({ scrolled }) => {
                   </li>
                 ))}
               </ul>
-              <button className="enroll-btn mobile" onClick={() => alert("Enrollment process initiated!")}>
+              <button className="enroll-btn mobile" 
+              onClick={(e) => {
+                        e.preventDefault()
+                        scrollToSection("contact")
+                      }}>
                 Enroll Now
               </button>
             </nav>
