@@ -10,6 +10,26 @@ const teamMembers = [
     social: {
       email: "#supriyaravi2007@gmail.com",
     },
+  },
+  {
+    id: 2,
+    name: "R Selvi",
+    role: "Physics & Chemistry tutor",
+    bio: "Bio goes here",
+    image: "/placeholder.svg?height=500&width=400",
+    social: {
+      email: "#rk@gmail.com",
+    },
+  },
+  {
+    id: 3,
+    name: "Mala Ajoy Kumar",
+    role: "Maths & Physcis tutor",
+    bio: "Bio goes here",
+    image: "/placeholder.svg?height=500&width=400",
+    social: {
+      email: "#rk@gmail.com",
+    },
   }
 ]
 
