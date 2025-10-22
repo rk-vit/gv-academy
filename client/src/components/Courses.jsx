@@ -7,6 +7,7 @@ const courseCategories = [
   { id: "cbse", name: "CBSE" },
   { id: "icse", name: "ICSE" },
   { id: "matric", name: "Matriculation" },
+  { id: "Life Skills", name: "Life Skills" }, // Add this
 ];
 
 const coursesData = [
@@ -87,6 +88,15 @@ const coursesData = [
     title: "Senior Secondary-Matric",
     description: "Class XI-XII",
     category: "matric",
+    duration: "12 Months",
+    level: "Monthly Plan Available",
+    icon: "code",
+  },
+  {
+    id: 10,
+    title: "Life Skills Training",
+    description: "Life Skills Development Program is being provided by our expert faculty to enhance interpersonal skills, decision-making abilities, and emotional intelligence .",
+    category: "Life Skills",
     duration: "12 Months",
     level: "Monthly Plan Available",
     icon: "code",

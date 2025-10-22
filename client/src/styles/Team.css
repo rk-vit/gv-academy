@@ -4,6 +4,7 @@
 
 .team-members {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
@@ -26,6 +27,7 @@
 .member-image-container {
   position: relative;
   overflow: hidden;
+  
 }
 
 .member-image-container img {

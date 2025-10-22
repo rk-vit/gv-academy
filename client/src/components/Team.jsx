@@ -30,6 +30,16 @@ const teamMembers = [
     social: {
       email: "#rk@gmail.com",
     },
+  },
+  {
+    id: 4,
+    name: "S. Bhuvana",
+    role: "Maths & Physcis tutor",
+    bio: "Bio goes here",
+    image: "/bhuvana.jpg?height=500&width=400",
+    social: {
+      email: "#rk@gmail.com",
+    },
   }
 ]
 
