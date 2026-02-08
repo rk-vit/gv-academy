@@ -18,7 +18,7 @@ const teamMembers = [
     bio: "Bio goes here",
     image: "/placeholder.svg?height=500&width=400",
     social: {
-      email: "#rk@gmail.com",
+      email: "",
     },
   },
   {
@@ -28,7 +28,7 @@ const teamMembers = [
     bio: "Bio goes here",
     image: "/placeholder.svg?height=500&width=400",
     social: {
-      email: "#rk@gmail.com",
+      email: "",
     },
   },
   {
@@ -38,7 +38,17 @@ const teamMembers = [
     bio: "Bio goes here",
     image: "/bhuvana.jpg?height=500&width=400",
     social: {
-      email: "#rk@gmail.com",
+      email: "",
+    },
+  },
+  {
+    id: 5,
+    name: "K Valli",
+    role: "Accounts Tutor",
+    bio: "Bio goes here",
+    image: "/k_valli.jpeg?height=500&width=400",
+    social: {
+      email: "",
     },
   }
 ]

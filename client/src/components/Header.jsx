@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import "../styles/Header.css"
-
+import logo from "../../public/logo_new_test.png"
 const Header = ({ scrolled }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -23,22 +23,8 @@ const Header = ({ scrolled }) => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="logo-icon"
-            >
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-            </svg>
-            <span className="logo-text">GurukulaVriksham</span>
+            <img src={logo} alt="GurukulaViriksham Logo" className="logo-image" />
+            <span className="logo-text">GurukulaViriksham</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -1,18 +1,32 @@
+/* =========================
+   HEADER BASE
+========================= */
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 50;
-  transition: all 0.3s ease;
-  padding: 1rem 0;
-  background-color: transparent;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  padding: 0.8rem 0;
 }
 
 .header.scrolled {
-  background-color: white;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 0.4rem 0;
+}
+
+/* =========================
+   CONTAINER FIX
+========================= */
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
 }
 
 .header-content {
@@ -21,107 +35,130 @@
   justify-content: space-between;
 }
 
+/* =========================
+   LOGO
+========================= */
+
 .logo {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
-.logo-icon {
-  height: 2rem;
-  width: 2rem;
-  color: #059669;
+.logo-image {
+  width: 42px;
+  height: auto;
 }
 
 .logo-text {
-  margin-left: 0.5rem;
   font-size: 1.4rem;
   font-weight: 700;
-  color: whitesmoke;
-}
-
-
-.desktop-nav {
-  display: none;
-}
-
-.desktop-nav ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.desktop-nav a {
-  font-size: 0.885rem;
-  font-weight: 700;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
-.header:not(.scrolled) .desktop-nav a {
-  color: white;
-  transition: color 0.5s ease;
+.header.scrolled .logo-text {
+  color: #1f2937;
 }
-.header:not(.scrolled) .desktop-nav a:hover{
-  color:#065f46;
+
+/* =========================
+   DESKTOP NAV
+========================= */
+
+.desktop-nav {
+  display: none;
+  align-items: center;
+  gap: 2rem;
 }
+
+.desktop-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-nav a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
 .header.scrolled .desktop-nav a {
   color: #1f2937;
-  transition: color 0.5s ease;
-}
-.header.scrolled .logo-text{
-  color: #1f2937;
-}
-.header.scrolled .desktop-nav a:hover{
-  color:#047857;
 }
 
 .desktop-nav a:hover {
   color: #059669;
 }
 
+/* =========================
+   ENROLL BUTTON
+========================= */
+
 .enroll-btn {
-  background-color: #065f46;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  font-weight: 500;
+  background: #065f46;
+  color: #ffffff;
   border: none;
-  transition: background-color 0.7s ease,color 0.7s ease;
-  margin-left: 2rem;
+  padding: 0.55rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .enroll-btn:hover {
-  background-color: white;
-  color:#065f46;
+  background: #ffffff;
+  color: #065f46;
 }
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
 
 .mobile-menu-btn {
-  display: block;
   background: none;
   border: none;
-  color: #4b5563;
+  cursor: pointer;
+  color: #ffffff;
 }
 
+.header.scrolled .mobile-menu-btn {
+  color: #1f2937;
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+
 .mobile-nav {
-  margin-top: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
   padding: 1rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .mobile-nav ul {
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .mobile-nav a {
-  font-size: 0.875rem;
-  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: #1f2937;
-  transition: color 0.3s ease;
 }
 
 .mobile-nav a:hover {
@@ -130,17 +167,19 @@
 
 .enroll-btn.mobile {
   width: 100%;
-  margin: 1rem 0 0;
+  margin-top: 1rem;
 }
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (min-width: 768px) {
   .desktop-nav {
     display: flex;
-    align-items: center;
   }
 
   .mobile-menu-btn {
     display: none;
   }
 }
-
