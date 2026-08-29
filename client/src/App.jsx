@@ -5,6 +5,7 @@ import About from "./components/About"
 import VisionMission from "./components/VisionMission"
 import Team from "./components/Team"
 import Courses from "./components/Courses"
+import Faq from "./components/Faq"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Careers from "./components/Carrers"
@@ -24,12 +25,13 @@ function App() {
   return (
     <div className="app">
       <Header scrolled={scrolled} />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
         <VisionMission />
         <Courses/>
         <Team />
+        <Faq />
         <Careers/>
         <Contact /> 
 
@@ -41,4 +43,3 @@ function App() {
 }
 
 export default App
-

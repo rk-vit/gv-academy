@@ -6,6 +6,58 @@
         "use": "@vercel/static-build"
       }
     ],
-    "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] 
+    "routes": [
+      {
+        "src": "/madhavaram-tuition-centre$",
+        "dest": "/madhavaram-tuition-centre/",
+        "status": 308
+      },
+      {
+        "src": "/madhavaram-tuition-centre/",
+        "dest": "/madhavaram-tuition-centre/index.html",
+        "status": 200
+      },
+      {
+        "src": "/courses/cbse-tuition-madhavaram$",
+        "dest": "/courses/cbse-tuition-madhavaram/",
+        "status": 308
+      },
+      {
+        "src": "/courses/cbse-tuition-madhavaram/",
+        "dest": "/courses/cbse-tuition-madhavaram/index.html",
+        "status": 200
+      },
+      {
+        "src": "/courses/icse-tuition-madhavaram$",
+        "dest": "/courses/icse-tuition-madhavaram/",
+        "status": 308
+      },
+      {
+        "src": "/courses/icse-tuition-madhavaram/",
+        "dest": "/courses/icse-tuition-madhavaram/index.html",
+        "status": 200
+      },
+      {
+        "src": "/courses/matriculation-tuition-madhavaram$",
+        "dest": "/courses/matriculation-tuition-madhavaram/",
+        "status": 308
+      },
+      {
+        "src": "/courses/matriculation-tuition-madhavaram/",
+        "dest": "/courses/matriculation-tuition-madhavaram/index.html",
+        "status": 200
+      },
+      {
+        "src": "/courses/life-skills-training-madhavaram$",
+        "dest": "/courses/life-skills-training-madhavaram/",
+        "status": 308
+      },
+      {
+        "src": "/courses/life-skills-training-madhavaram/",
+        "dest": "/courses/life-skills-training-madhavaram/index.html",
+        "status": 200
+      },
+      { "src": "/[^.]+", "dest": "/", "status": 200 }
+    ]
   
   }

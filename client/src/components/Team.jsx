@@ -6,7 +6,7 @@ const teamMembers = [
     name: "Dr. Supriya Ravishankar",
     role: "Founder & Director",
     bio: "With over 10+ years of experience in education, Dr. Supriya combines traditional knowledge with modern teaching methodologies.",
-    image: "/founder.jpg?height=500&width=400",
+    image: "/founder.jpg",
     social: {
       email: "#supriyaravi2007@gmail.com",
     },
@@ -16,7 +16,7 @@ const teamMembers = [
     name: "R Selvi",
     role: "Physics & Chemistry tutor",
     bio: "Bio goes here",
-    image: "/placeholder.svg?height=500&width=400",
+    image: "/placeholder.svg",
     social: {
       email: "",
     },
@@ -24,9 +24,9 @@ const teamMembers = [
   {
     id: 3,
     name: "Mala Ajoy Kumar",
-    role: "Maths & Physcis tutor",
+    role: "Maths & Physics tutor",
     bio: "Bio goes here",
-    image: "/placeholder.svg?height=500&width=400",
+    image: "/placeholder.svg",
     social: {
       email: "",
     },
@@ -34,9 +34,9 @@ const teamMembers = [
   {
     id: 4,
     name: "S. Bhuvana",
-    role: "Maths & Physcis tutor",
+    role: "Maths & Physics tutor",
     bio: "Bio goes here",
-    image: "/bhuvana.jpg?height=500&width=400",
+    image: "/bhuvana.jpg",
     social: {
       email: "",
     },
@@ -46,7 +46,7 @@ const teamMembers = [
     name: "K Valli",
     role: "Accounts Tutor",
     bio: "Bio goes here",
-    image: "/k_valli.jpeg?height=500&width=400",
+    image: "/k_valli.jpeg",
     social: {
       email: "",
     },
@@ -58,14 +58,13 @@ const Team = () => {
     const section = document.getElementById(sectionId)
     if (section) {
       section.scrollIntoView({ behavior: "smooth" })
-      setIsMenuOpen(false)
     }
   }
   return (
-    <section id="team" className="team">
+    <section id="team" className="team" aria-labelledby="team-title">
       <div className="container">
         <div className="section-title">
-          <h2>Our Board</h2>
+          <h2 id="team-title">Our Board and Tutors</h2>
           <div className="divider"></div>
           <p>Meet the visionary leaders and experts on our board who guide us towards excellence and innovation.</p>
         </div>
@@ -74,7 +73,14 @@ const Team = () => {
           {teamMembers.map((member) => (
             <div key={member.id} className="team-member">
               <div className="member-image-container">
-                <img src={member.image || "/placeholder.svg"} alt={member.name} />
+                <img
+                  src={member.image || "/placeholder.svg"}
+                  alt={`${member.name}, GurukulaVriksham Academy tutor`}
+                  width="400"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="member-social">
                   <div className="social-icons">
                     {/*<a href={member.social.linkedin} className="social-icon">
@@ -139,7 +145,7 @@ const Team = () => {
           
         <div className="view-all">
           <a
-            href="#Contact"
+            href="#contact"
             className="view-all-link"
             onClick={() => scrollToSection("contact")}
           >
@@ -167,4 +173,3 @@ const Team = () => {
 }
 
 export default Team
-

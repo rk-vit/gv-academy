@@ -20,17 +20,24 @@ const Header = ({ scrolled }) => {
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
+      <a className="skip-link" href="#main-content">Skip to content</a>
       <div className="container">
         <div className="header-content">
-          <div className="logo">
-            <img src={logo} alt="GurukulaViriksham Logo" className="logo-image" />
-            <span className="logo-text">GurukulaViriksham</span>
-          </div>
+          <a href="/" className="logo" aria-label="GurukulaVriksham Academy home">
+            <img
+              src={logo}
+              alt="GurukulaVriksham Academy logo"
+              className="logo-image"
+              width="42"
+              height="46"
+            />
+            <span className="logo-text">GurukulaVriksham</span>
+          </a>
 
           {/* Desktop Navigation */}
-          <nav className="desktop-nav">
+          <nav className="desktop-nav" aria-label="Primary navigation">
             <ul>
-              {["Home", "About", "Vision & Mission", "Courses", "Team", "Careers", "Contact"].map((item) => (
+              {["Home", "About", "Vision & Mission", "Courses", "Team", "FAQ", "Careers", "Contact"].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
@@ -44,7 +51,7 @@ const Header = ({ scrolled }) => {
                 </li>
               ))}
             </ul>
-            <button className="enroll-btn" onClick={(e) => {
+            <button type="button" className="enroll-btn" onClick={(e) => {
                         e.preventDefault()
                         scrollToSection("contact")
                       }}>
@@ -53,7 +60,7 @@ const Header = ({ scrolled }) => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle Menu">
+          <button type="button" className="mobile-menu-btn" onClick={toggleMenu} aria-label={isMenuOpen ? "Close menu" : "Open menu"} aria-expanded={isMenuOpen}>
             {isMenuOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -92,9 +99,9 @@ const Header = ({ scrolled }) => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="mobile-nav">
-            <nav>
+            <nav aria-label="Mobile navigation">
               <ul>
-                {["Home", "About", "Vision & Mission", "Courses", "Team", "Careers", "Contact"].map((item) => (
+                {["Home", "About", "Vision & Mission", "Courses", "Team", "FAQ", "Careers", "Contact"].map((item) => (
                   <li key={item}>
                     <a
                       href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
@@ -108,7 +115,7 @@ const Header = ({ scrolled }) => {
                   </li>
                 ))}
               </ul>
-              <button className="enroll-btn mobile" 
+              <button type="button" className="enroll-btn mobile"
               onClick={(e) => {
                         e.preventDefault()
                         scrollToSection("contact")

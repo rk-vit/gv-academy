@@ -19,6 +19,24 @@
   padding: 0.4rem 0;
 }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 1100;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.35rem;
+  background: #ffffff;
+  color: #065f46;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
 /* =========================
    CONTAINER FIX
 ========================= */

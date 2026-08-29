@@ -147,10 +147,10 @@ const Careers = () => {
   }
 
   return (
-    <section id="careers" className="careers">
+    <section id="careers" className="careers" aria-labelledby="careers-title">
       <div className="container">
         <div className="section-title">
-          <h2>Careers</h2>
+          <h2 id="careers-title">Careers at GurukulaVriksham Academy</h2>
           <div className="divider"></div>
           <p>Join our team and be part of our mission to blend traditional wisdom with modern education</p>
         </div>
@@ -218,13 +218,20 @@ const Careers = () => {
           <div className="tab-content">
             <div className="why-join-content">
               <div className="why-join-image">
-                <img src="/placeholder.svg?height=600&width=800" alt="Team at GurukulaViriksham" />
+                <img
+                  src="/placeholder.svg"
+                  alt="Team at GurukulaVriksham Academy"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
 
               <div className="benefits-section">
                 <h3>Why Work With Us</h3>
                 <p>
-                  At GurukulaViriksham Academy, we believe that our team members are our greatest asset. We foster a
+                  At GurukulaVriksham Academy, we believe that our team members are our greatest asset. We foster a
                   collaborative environment where traditional wisdom meets modern innovation, creating a unique
                   workplace culture that values both heritage and progress.
                 </p>
@@ -330,7 +337,7 @@ const Careers = () => {
 
                 <div className="testimonial">
                   <blockquote>
-                    "Working at GurukulaViriksham has been the most rewarding experience of my career. The blend of
+                    "Working at GurukulaVriksham has been the most rewarding experience of my career. The blend of
                     traditional values with modern teaching methods creates a unique environment where both teachers and
                     students thrive."
                   </blockquote>
@@ -350,7 +357,7 @@ const Careers = () => {
             <div className="application-intro">
               <h3>Apply to Join Our Team</h3>
               <p>
-                Thank you for your interest in working with GurukulaViriksham Academy. Please fill out the form below,
+                Thank you for your interest in working with GurukulaVriksham Academy. Please fill out the form below,
                 and our HR team will review your application. We look forward to potentially welcoming you to our
                 community.
               </p>
@@ -376,7 +383,7 @@ const Careers = () => {
                 </div>
                 <h3>Application Submitted Successfully!</h3>
                 <p>
-                  Thank you for your interest in joining GurukulaViriksham Academy. Our HR team will review your
+                  Thank you for your interest in joining GurukulaVriksham Academy. Our HR team will review your
                   application and contact you if your qualifications match our requirements.
                 </p>
                 <button
@@ -523,7 +530,7 @@ const Careers = () => {
                       rows="4"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Tell us why you're interested in joining GurukulaViriksham Academy and any additional information you'd like to share"
+                      placeholder="Tell us why you're interested in joining GurukulaVriksham Academy and any additional information you'd like to share"
                     ></textarea>
                   </div>
 

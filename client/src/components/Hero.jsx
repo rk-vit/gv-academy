@@ -52,11 +52,14 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="hero">
+    <section id="home" className="hero" aria-labelledby="hero-title">
       {/* Background with overlay */}
       <div className="hero-background">
         <div className="overlay"></div>
-        <div className="background-image"></div>
+        <picture className="background-image" aria-hidden="true">
+          <source srcSet="/he.webp" type="image/webp" />
+          <img src="/he.png" alt="" width="896" height="1152" fetchPriority="high" />
+        </picture>
 
         {/* Animated particles */}
         <div className="particles">
@@ -78,10 +81,10 @@ const Hero = () => {
       </div>
 
       <div className="container hero-content">
-        <h1 ref={titleRef}>Nurturing Knowledge, Cultivating Character</h1>
+        <h1 id="hero-title" ref={titleRef}>Nurturing Knowledge, Cultivating Character</h1>
         <p ref={subtitleRef}>
-          At GurukulaVriksham Academy, we blend traditional wisdom with modern education to shape the leaders of
-          tomorrow
+          At GurukulaVriksham Academy in Madhavaram, Chennai, we blend traditional wisdom with modern education to
+          shape the leaders of tomorrow.
         </p>
         <div ref={ctaRef} className="cta-buttons">
           <button className="primary-btn" onClick={() => scrollToSection("courses")}>
@@ -118,4 +121,3 @@ const Hero = () => {
 }
 
 export default Hero
-

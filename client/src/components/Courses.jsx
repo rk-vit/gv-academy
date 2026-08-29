@@ -7,8 +7,15 @@ const courseCategories = [
   { id: "cbse", name: "CBSE" },
   { id: "icse", name: "ICSE" },
   { id: "matric", name: "Matriculation" },
-  { id: "Life Skills", name: "Life Skills" }, // Add this
+  { id: "life-skills", name: "Life Skills" },
 ];
+
+const courseLinks = {
+  cbse: "/courses/cbse-tuition-madhavaram/",
+  icse: "/courses/icse-tuition-madhavaram/",
+  matric: "/courses/matriculation-tuition-madhavaram/",
+  "life-skills": "/courses/life-skills-training-madhavaram/",
+}
 
 const coursesData = [
   {
@@ -96,7 +103,7 @@ const coursesData = [
     id: 10,
     title: "Life Skills Training",
     description: "Life Skills Development Program is being provided by our expert faculty to enhance interpersonal skills, decision-making abilities, and emotional intelligence .",
-    category: "Life Skills",
+    category: "life-skills",
     duration: "12 Months",
     level: "Monthly Plan Available",
     icon: "code",
@@ -229,19 +236,27 @@ const Courses = () => {
     activeCategory === "all" ? coursesData : coursesData.filter((course) => course.category === activeCategory)
 
   return (
-    <section id="courses" className="courses">
+    <section id="courses" className="courses" aria-labelledby="courses-title">
       <div className="container">
         <div className="section-title">
-          <h2>Our Courses</h2>
+          <h2 id="courses-title">Tuition Courses in Madhavaram</h2>
           <div className="divider"></div>
-          <p>Explore our diverse range of courses that blend traditional knowledge with modern education</p>
+          <p>Explore our diverse range of courses that blend traditional knowledge with modern education.</p>
+          <p className="course-focus">
+            Our programmes cover CBSE, ICSE and Matriculation syllabi for Classes I–XII, alongside Life Skills Training
+            to help students grow with confidence.
+          </p>
         </div>
 
         {/* Category Tabs */}
-        <div className="category-tabs">
+        <div className="category-tabs" role="tablist" aria-label="Course curriculum boards">
           {courseCategories.map((category) => (
             <button
               key={category.id}
+              type="button"
+              role="tab"
+              aria-selected={activeCategory === category.id}
+              aria-controls="course-results"
               onClick={() => setActiveCategory(category.id)}
               className={`category-tab ${activeCategory === category.id ? "active" : ""}`}
             >
@@ -251,9 +266,9 @@ const Courses = () => {
         </div>
 
         {/* Course Cards */}
-        <div className="course-cards">
+        <div id="course-results" className="course-cards" role="tabpanel">
           {filteredCourses.map((course) => (
-            <div key={course.id} className="course-card">
+            <article key={course.id} className="course-card">
               <div className="course-icon">{getIcon(course.icon)}</div>
               <h3>{course.title}</h3>
               <p>{course.description}</p>
@@ -261,7 +276,11 @@ const Courses = () => {
                 <span className="duration-tag">{course.duration}</span>
                 <span className="level-tag">{course.level}</span>
               </div>
-              <button className="learn-more-btn" onClick={() => alert(`Learn more about ${course.title}`)}>
+              <a
+                className="learn-more-btn"
+                href={courseLinks[course.category] || "/#contact"}
+                aria-label={`Learn more about ${course.title}`}
+              >
                 Learn more
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -276,8 +295,8 @@ const Courses = () => {
                 >
                   <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
-              </button>
-            </div>
+              </a>
+            </article>
           ))}
         </div>
 
@@ -307,4 +326,3 @@ const Courses = () => {
 }
 
 export default Courses
-

@@ -2,10 +2,10 @@ import "../styles/About.css"
 
 const About = () => {
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" aria-labelledby="about-title">
       <div className="container">
         <div className="section-title">
-          <h2>About GurukulaViriksham</h2>
+          <h2 id="about-title">About GurukulaVriksham Academy</h2>
           <div className="divider"></div>
           <p>
             Discover our unique approach to education that combines ancient wisdom with modern teaching methodologies
@@ -16,16 +16,23 @@ const About = () => {
           <div className="about-image">
             <div className="image-decoration top-left"></div>
             <div className="image-decoration bottom-right"></div>
-            <img src="/founder1.jpg?height=600&width=800" alt="Students at GurukulaViriksham" />
+            <img
+              src="/founder1.jpg"
+              alt="Students learning at GurukulaVriksham Academy in Madhavaram"
+              width="659"
+              height="630"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <div className="about-text">
             <h3>Our Story</h3>
             <p>
-              Founded in 2024, GurukulaViriksham Academy was established with a vision to create an educational
+              Founded in 2024, GurukulaVriksham Academy was established with a vision to create an educational
               institution that honors the ancient Gurukula system while embracing modern educational practices. Our name
               reflects our philosophy - "Gurukula" representing the traditional teacher-student relationship, and
-              "Viriksham" meaning tree, symbolizing growth and knowledge.
+              "Vriksham" meaning tree, symbolizing growth and knowledge.
             </p>
             <p>
               We believe in holistic development that nurtures not just academic excellence but also character, values,
@@ -136,4 +143,3 @@ const About = () => {
 }
 
 export default About
-

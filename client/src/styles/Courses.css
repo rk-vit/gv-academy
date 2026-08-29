@@ -10,6 +10,12 @@
   margin-bottom: 3rem;
 }
 
+.course-focus {
+  margin: 0.75rem auto 0;
+  font-size: 1rem;
+  color: #374151;
+}
+
 .category-tab {
   padding: 0.5rem 1.5rem;
   border-radius: 9999px;
@@ -152,4 +158,3 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-

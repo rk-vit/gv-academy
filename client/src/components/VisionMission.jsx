@@ -2,10 +2,10 @@ import "../styles/VisionMission.css"
 
 const VisionMission = () => {
   return (
-    <section id="vision-&-mission" className="vision-mission">
+    <section id="vision-&-mission" className="vision-mission" aria-labelledby="vision-mission-title">
       <div className="container">
         <div className="section-title">
-          <h2>Vision & Mission</h2>
+          <h2 id="vision-mission-title">Vision & Mission</h2>
           <div className="divider"></div>
           <p>Our guiding principles that shape our educational approach and institutional values</p>
         </div>
@@ -143,4 +143,3 @@ const VisionMission = () => {
 }
 
 export default VisionMission
-

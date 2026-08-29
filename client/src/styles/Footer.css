@@ -16,6 +16,26 @@
   font-size: 0.875rem;
 }
 
+.footer-course-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  max-width: 58rem;
+  font-size: 0.85rem;
+}
+
+.footer-course-links a {
+  color: #d1fae5;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.footer-course-links a:hover,
+.footer-course-links a:focus-visible {
+  color: #ffffff;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -44,4 +64,3 @@
   height: 1rem;
   width: 1rem;
 }
-
