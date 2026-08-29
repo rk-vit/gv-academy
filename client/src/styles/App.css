@@ -1,4 +1,10 @@
 /* Global styles */
+:root {
+  --forest: #0b4634;
+  --lime: #d8ee72;
+  --radius-md: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;

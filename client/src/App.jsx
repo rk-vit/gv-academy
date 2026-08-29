@@ -6,9 +6,11 @@ import VisionMission from "./components/VisionMission"
 import Team from "./components/Team"
 import Courses from "./components/Courses"
 import Faq from "./components/Faq"
+import Testimonials from "./components/Testimonials"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Careers from "./components/Carrers"
+import VideoPopup from "./components/VideoPopup"
 import "./styles/App.css"
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
         <VisionMission />
         <Courses/>
         <Team />
+        <Testimonials />
         <Faq />
         <Careers/>
         <Contact /> 
@@ -38,6 +41,7 @@ function App() {
           
       </main>
       <Footer />
+      <VideoPopup />
     </div>
   )
 }

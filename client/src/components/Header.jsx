@@ -37,7 +37,7 @@ const Header = ({ scrolled }) => {
           {/* Desktop Navigation */}
           <nav className="desktop-nav" aria-label="Primary navigation">
             <ul>
-              {["Home", "About", "Vision & Mission", "Courses", "Team", "FAQ", "Careers", "Contact"].map((item) => (
+              {["Home", "About", "Vision & Mission", "Courses", "Team", "Testimonials", "FAQ", "Careers", "Contact"].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
@@ -101,7 +101,7 @@ const Header = ({ scrolled }) => {
           <div className="mobile-nav">
             <nav aria-label="Mobile navigation">
               <ul>
-                {["Home", "About", "Vision & Mission", "Courses", "Team", "FAQ", "Careers", "Contact"].map((item) => (
+                {["Home", "About", "Vision & Mission", "Courses", "Team", "Testimonials", "FAQ", "Careers", "Contact"].map((item) => (
                   <li key={item}>
                     <a
                       href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
