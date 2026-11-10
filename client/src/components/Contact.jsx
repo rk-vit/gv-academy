@@ -87,7 +87,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4>Our Location</h4>
-                    <address className="contact-address">157, Munnuswamy Complex, Madhavaram, Thabaalpetti, Chennai - 600060</address>
+                    <address className="contact-address">No.157 M.R.H. Road, Thapalpetti, Madhavaram, Chennai - 600 060 (Near Chaai Nest)</address>
                   </div>
                 </div>
 

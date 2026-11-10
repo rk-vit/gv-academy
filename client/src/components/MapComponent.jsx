@@ -15,18 +15,19 @@ L.Icon.Default.mergeOptions({
 });
 
 const MapComponent = () => {
-  const position = [12.9716, 77.5946]; // Example: Bangalore coordinates
+  const position = [13.1488, 80.2306]; // Madhavaram, Chennai coordinates
 
   return (
     <div style={{ height: "400px", width: "100%", borderRadius: "8px", overflow: "hidden" }}>
-      <MapContainer center={position} zoom={13} style={{ height: "100%", width: "100%" }}>
+      <MapContainer center={position} zoom={14} style={{ height: "100%", width: "100%" }}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={position}>
           <Popup>
-            Gurukula Viriksham <br /> Knowledge City, 560001.
+            Gurukula Vriksham Academy <br />
+            No.157 M.R.H. Road, Thapalpetti, Madhavaram, Chennai - 600 060 (Near Chaai Nest)
           </Popup>
         </Marker>
       </MapContainer>

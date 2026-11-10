@@ -8,24 +8,24 @@ const teamMembers = [
     bio: "With over 10+ years of experience in education, Dr. Supriya combines traditional knowledge with modern teaching methodologies.",
     image: "/founder.jpg",
     social: {
-      email: "#supriyaravi2007@gmail.com",
+      email: "supriyaravi2007@gmail.com",
     },
   },
   {
     id: 2,
-    name: "R Selvi",
-    role: "Physics & Chemistry tutor",
-    bio: "Bio goes here",
-    image: "/placeholder.svg",
+    name: "Niranjana",
+    role: "Maths Tutor",
+    bio: "A dedicated Mathematics educator focused on making core concepts intuitive and engaging. She strengthens problem-solving ability, analytical thinking, and academic confidence across all student levels.",
+    image: "/niranjana.jpg",
     social: {
       email: "",
     },
   },
   {
     id: 3,
-    name: "Mala Ajoy Kumar",
-    role: "Maths & Physics tutor",
-    bio: "Bio goes here",
+    name: "R. Christy",
+    role: "Social & English Tutor",
+    bio: "Holding an M.A. in English from Women's Christian College and a B.Ed, Christy brings over a decade of rich teaching experience across Kidzee and Bosco, specializing in interactive language mastery and social sciences.",
     image: "/placeholder.svg",
     social: {
       email: "",
@@ -33,24 +33,14 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "S. Bhuvana",
-    role: "Maths & Physics tutor",
-    bio: "Bio goes here",
-    image: "/bhuvana.jpg",
+    name: "S. Gandhimathi",
+    role: "Tamil Tutor",
+    bio: "With a B.A. in Tamil and a D.F.A. in Painting, Gandhimathi brings more than 13 years of distinguished teaching experience, including 11 years at Bosco Academy, fostering Tamil literature appreciation, grammar, and cultural depth.",
+    image: "/placeholder.svg",
     social: {
       email: "",
     },
   },
-  {
-    id: 5,
-    name: "K Valli",
-    role: "Accounts Tutor",
-    bio: "Bio goes here",
-    image: "/k_valli.jpeg",
-    social: {
-      email: "",
-    },
-  }
 ]
 
 const Team = () => {
@@ -83,54 +73,46 @@ const Team = () => {
                 />
                 <div className="member-social">
                   <div className="social-icons">
-                    {/*<a href={member.social.linkedin} className="social-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
+                    {member.social?.email ? (
+                      <a href={`mailto:${member.social.email}`} className="social-icon" aria-label={`Email ${member.name}`}>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                          <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                      </a>
+                    ) : (
+                      <a
+                        href="#contact"
+                        className="social-icon"
+                        aria-label={`Contact about ${member.name}`}
+                        onClick={() => scrollToSection("contact")}
                       >
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                      </svg>
-                    </a>
-                    <a href={member.social.twitter} className="social-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                      </svg>
-                    </a> */}
-                    <a href={`mailto:${member.social.email}`} className="social-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                      </svg>
-                    </a>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                          <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -164,7 +146,6 @@ const Team = () => {
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
           </a>
-          
         </div>
   
       </div>

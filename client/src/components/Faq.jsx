@@ -19,7 +19,7 @@ const questions = [
   {
     question: "Where is the tuition centre located?",
     answer:
-      "GurukulaVriksham Academy is at 157, Munnuswamy Complex, Madhavaram, Thabaalpetti, Chennai – 600060. The office is open Monday to Saturday from 5:00 PM to 9:00 PM.",
+      "GurukulaVriksham Academy is at No.157 M.R.H. Road, Thapalpetti, Madhavaram, Chennai – 600 060 (Near Chaai Nest). The office is open Monday to Saturday from 5:00 PM to 9:00 PM.",
   },
 ]
 

@@ -1,5 +1,6 @@
 .team {
   background-color: white;
+  overflow: hidden;
 }
 
 .team-members {
@@ -12,11 +13,13 @@
 .team-member {
   background-color: #f9fafb;
   border-radius: 0.75rem;
-  max-width: 400px;
+  width: 100%;
+  max-width: 360px;
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .team-member:hover {
@@ -27,7 +30,7 @@
 .member-image-container {
   position: relative;
   overflow: hidden;
-  
+  background-color: #e5e7eb;
 }
 
 .member-image-container img {
@@ -77,6 +80,9 @@
 
 .member-info {
   padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .member-info h3 {
@@ -95,6 +101,7 @@
 .member-bio {
   color: #6b7280;
   font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .view-all {
@@ -121,7 +128,6 @@
 @media (max-width: 768px) {
   .team-members {
     flex-direction: column;
+    align-items: center;
   }
 }
-
-

@@ -11,14 +11,22 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .app {
   width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
